@@ -1,0 +1,78 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font for a playful feel */
+  background: linear-gradient(135deg, #f9f7f7, #f3e5f5); /* Soft gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  background-color: #ffffff; /* White background for the game container */
+  border-radius: 12px; /* Rounded corners */
+  padding: 30px; /* Increased padding for a more spacious layout */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow for a lifted effect */
+  text-align: center;
+  max-width: 400px; /* Limit the maximum width */
+  width: 90%; /* Responsive width */
+}
+
+h1 {
+  color: #ff4081; /* Bright pink for the heading */
+  font-size: 28px; /* Larger heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+p {
+  font-size: 18px; /* Standard paragraph size */
+  color: #333; /* Darker text color for readability */
+}
+
+input[type="text"] {
+  width: 50px; /* Slightly wider input */
+  padding: 10px; /* More padding for comfort */
+  margin: 10px 0; /* Spacing around input */
+  font-size: 18px; /* Input text size */
+  border: 2px solid #ff4081; /* Bright pink border */
+  border-radius: 5px; /* Rounded corners for input */
+  transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+input[type="text"]:focus {
+  border-color: #673ab7; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+button {
+  padding: 12px 20px; /* Padding for buttons */
+  font-size: 18px; /* Button text size */
+  cursor: pointer; /* Pointer cursor on hover */
+  background-color: #4caf50; /* Green background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 6px; /* Rounded corners */
+  width: 100%; /* Full width buttons for better usability */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth background change and scaling */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+button:disabled {
+  background-color: #ccc; /* Greyed out color for disabled buttons */
+  cursor: not-allowed; /* Not-allowed cursor for disabled buttons */
+}
+
+.feedback {
+  font-size: 20px; /* Larger size for feedback messages */
+  color: #d9534f; /* Default color for feedback */
+  display: none; /* Hidden by default */
+  margin-top: 15px; /* Space above feedback messages */
+}
+
+.feedback.win {
+  color: #5cb85c; /* Green for win messages */
+}
